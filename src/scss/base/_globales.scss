@@ -1,0 +1,37 @@
+@use 'variables' as v;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: v.$fuentePrincipal;
+    font-size: 1.6rem;
+}
+p {
+    color: v.$negro;
+    font-size: 2rem;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 120rem;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+h1, h2, h3 {
+    margin: 0 0 5rem 0;
+}
+h1 {
+    font-size: 6rem;
+    text-decoration: underline;
+}
+

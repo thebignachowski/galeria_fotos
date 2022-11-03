@@ -1,0 +1,24 @@
+@use 'variables' as v;
+
+@mixin heading {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@mixin grid($columnas, $espaciado) {
+    display: grid;
+    gap: $espaciado;
+    grid-template-columns: repeat(($columnas, 1fr));
+}
+
+@mixin tablet {
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: v.$desktop) {
+        @content;
+    }
+}

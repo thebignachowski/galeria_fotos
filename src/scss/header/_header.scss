@@ -1,0 +1,12 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header {
+    margin: 0 auto;
+    color: v.$negro;
+    background-color: lighten(v.$gris, 10%);
+
+    &__heading {
+        @include m.heading;
+    }
+}
