@@ -12,7 +12,8 @@
     }
 
     &__mask {
-        margin-bottom: v.$separacion;
+        // Este margin descuadra todo el diseño
+        // margin-bottom: v.$separacion;
         width: 100%;
         overflow: hidden;
 
@@ -28,7 +29,7 @@
                 grid-row: 2 / 4;
 
                 img {
-                    height: 64rem;
+                    height: 62rem; // Había 2 rem de más
                 }
             }
             &:nth-child(3) {
@@ -40,13 +41,13 @@
             &:nth-child(5) {
                 grid-column: 2 / 5;
                 img {
-                    width: 92rem;
+                    width: 94rem; // Aquí había 2 rem de menos
                 }
             }
             &:nth-child(6) {
                 grid-column: 2 / 5;
                 img {
-                    width: 92rem;
+                    width: 94rem; // Aquí había 2 rem de menos
                 }
             }
             &:nth-child(7) {
@@ -54,7 +55,7 @@
                 grid-row: 4 / 6;
                 img {
                     width: 62rem;
-                    height: 64rem;
+                    height: 62rem; // Había 2 rem de más
                 }
             }
             &:nth-child(10) {
